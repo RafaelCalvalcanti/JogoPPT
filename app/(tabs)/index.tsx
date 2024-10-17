@@ -8,9 +8,8 @@ const App = () => {
 
   const choices: string[] = ['Pedra', 'Papel', 'Tesoura'];
 
-  // Definimos que userSelection é uma string
   const playGame = (userSelection: string) => {
-    const randomIndex = Math.floor(Math.random() * 3); // Gera um número aleatório entre 0 e 2
+    const randomIndex = Math.floor(Math.random() * 3); 
     const computerSelection = choices[randomIndex];
 
     setUserChoice(userSelection);
